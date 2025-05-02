@@ -1,4 +1,6 @@
 BMI Calculator with AI-Powered Health Suggestions
+
+
 Overview
 This project is a modern web-based Body Mass Index (BMI) calculator built with Python, Flask, HTML/CSS, and Google Gemini API. Users enter their weight and height, and the app calculates their BMI, then leverages Gemini’s AI to provide personalized, easy-to-understand health suggestions and tips based on the result.
 
@@ -89,6 +91,8 @@ You can check available models for your API key by visiting:
 
 text
 https://generativelanguage.googleapis.com/v1beta/models?key=YOUR_GEMINI_API_KEY
+
+
 Project Structure
 text
 bmi_calculator/

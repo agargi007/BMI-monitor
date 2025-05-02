@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your BMI Result</h1>
+        <p>Your BMI is: <strong>{{ bmi }}</strong></p>
+        {% if ai_feedback %}
+          <div class="ai-feedback">
+            <h3>AI Suggestions:</h3>
+            <p>{{ ai_feedback|safe }}</p>
+          </div>
+        {% endif %}
+        <a href="{{ url_for('index') }}">Calculate Again</a>
+       
+    </div>
+</body>
+</html>
